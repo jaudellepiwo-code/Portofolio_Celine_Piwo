@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(to bottom right, #fce7f3, #e9d5ff, #ede9fe);
+  color: #0f172a;
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+main {
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+::selection {
+  background: #a855f7;
+  color: white;
+}
