@@ -7,12 +7,14 @@ const projects = [
       "Bei diesem Projekt habe ich eine moderne Portfolio-Webseite mit Next.js, React und Tailwind CSS entwickelt. Die Anwendung ist als Single-Page-Website aufgebaut und besteht aus wiederverwendbaren Komponenten wie Hero, About, Skills, Projects und Contact. Ziel war es, eine moderne, responsive und leicht wartbare Wedoberfläche zu erstellen.",
     tags: ["Next.js", "React", "Tailwind CSS", "GitHub"],
     link: "https://github.com/jaudellepiwo-code/Portofolio_Celine_Piwo",
+    image: "/images/portfolio.svg",
   },
   {
     title: "Netzwerkanalyse & TCP-Entwicklung",
     description:
       "Analyse von DNS-, TCP- und ICMP-Paketen mit Wireshark sowie Entwicklung eines TCP-Clients in C++.",
     tags: ["C++", "Wireshark", "TCP", "Linux"],
+    image: "/images/network.svg",
   },
   {
     title: "Landkartenanwendung",
@@ -26,6 +28,7 @@ const projects = [
     description:
       "Low-Level Programmierung in ARM Assembler und Analyse digitaler Schaltungen mit Logikgattern.",
     tags: ["ARM", "Assembler", "Hardware", "Logik"],
+    image: "/images/hardware.svg",
   },
 ];
 

@@ -1,0 +1,61 @@
+<svg viewBox="0 0 300 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Gradient background -->
+  <defs>
+    <linearGradient id="networkGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e0e7ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fce7f3;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Base -->
+  <rect width="300" height="240" fill="url(#networkGradient)"/>
+  
+  <!-- Network nodes -->
+  <!-- Node 1 - Top left -->
+  <circle cx="60" cy="50" r="12" fill="#7c3aed" opacity="0.8"/>
+  <circle cx="60" cy="50" r="8" fill="#a78bfa"/>
+  
+  <!-- Node 2 - Top right -->
+  <circle cx="240" cy="60" r="12" fill="#ec4899" opacity="0.8"/>
+  <circle cx="240" cy="60" r="8" fill="#f472b6"/>
+  
+  <!-- Node 3 - Center -->
+  <circle cx="150" cy="120" r="14" fill="#f43f5e" opacity="0.8"/>
+  <circle cx="150" cy="120" r="10" fill="#ff6b9d"/>
+  
+  <!-- Node 4 - Bottom left -->
+  <circle cx="70" cy="190" r="12" fill="#7c3aed" opacity="0.8"/>
+  <circle cx="70" cy="190" r="8" fill="#a78bfa"/>
+  
+  <!-- Node 5 - Bottom right -->
+  <circle cx="250" cy="180" r="12" fill="#ec4899" opacity="0.8"/>
+  <circle cx="250" cy="180" r="8" fill="#f472b6"/>
+  
+  <!-- Connection lines (network packets) -->
+  <!-- Line 1: Node1 to Center -->
+  <line x1="60" y1="50" x2="150" y2="120" stroke="#a78bfa" stroke-width="2" opacity="0.6"/>
+  <!-- Packet markers -->
+  <circle cx="100" cy="80" r="3" fill="#7c3aed"/>
+  
+  <!-- Line 2: Center to Node2 -->
+  <line x1="150" y1="120" x2="240" y2="60" stroke="#f472b6" stroke-width="2" opacity="0.6"/>
+  <circle cx="195" cy="90" r="3" fill="#ec4899"/>
+  
+  <!-- Line 3: Node3 to Node4 -->
+  <line x1="150" y1="120" x2="70" y2="190" stroke="#a78bfa" stroke-width="2" opacity="0.6"/>
+  <circle cx="110" cy="155" r="3" fill="#7c3aed"/>
+  
+  <!-- Line 4: Center to Node5 -->
+  <line x1="150" y1="120" x2="250" y2="180" stroke="#f472b6" stroke-width="2" opacity="0.6"/>
+  <circle cx="200" cy="150" r="3" fill="#ec4899"/>
+  
+  <!-- TCP/IP packets in flight -->
+  <rect x="45" y="35" width="8" height="8" rx="2" fill="#7c3aed" opacity="0.7"/>
+  <rect x="220" y="100" width="8" height="8" rx="2" fill="#ec4899" opacity="0.7"/>
+  <rect x="120" y="155" width="8" height="8" rx="2" fill="#a78bfa" opacity="0.7"/>
+  
+  <!-- Data flow indicators -->
+  <text x="80" y="65" font-size="8" fill="#7c3aed" font-weight="bold">TCP</text>
+  <text x="190" y="75" font-size="8" fill="#ec4899" font-weight="bold">DNS</text>
+  <text x="75" y="175" font-size="8" fill="#a78bfa" font-weight="bold">ICMP</text>
+</svg>
