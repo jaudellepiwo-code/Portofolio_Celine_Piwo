@@ -2,6 +2,13 @@
 
 const projects = [
   {
+    title: "Portfolio-Webseite",
+    description:
+      "Bei diesem Projekt habe ich eine moderne Portfolio-Webseite mit Next.js, React und Tailwind CSS entwickelt. Die Anwendung ist als Single-Page-Website aufgebaut und besteht aus wiederverwendbaren Komponenten wie Hero, About, Skills, Projects und Contact. Ziel war es, eine moderne, responsive und leicht wartbare Wedoberfläche zu erstellen.",
+    tags: ["Next.js", "React", "Tailwind CSS", "GitHub"],
+    link: "https://github.com/jaudellepiwo-code/Portofolio_Celine_Piwo",
+  },
+  {
     title: "Netzwerkanalyse & TCP-Entwicklung",
     description:
       "Analyse von DNS-, TCP- und ICMP-Paketen mit Wireshark sowie Entwicklung eines TCP-Clients in C++.",
@@ -31,7 +38,7 @@ export default function Projects() {
           </p>
 
           <h2 className="mt-4 text-4xl font-black text-slate-900 md:text-5xl">
-            Ausgewählte Studienprojekte
+            Projekte (Studium & Persönlich)
           </h2>
         </div>
 
@@ -63,6 +70,16 @@ export default function Projects() {
                   </span>
                 ))}
               </div>
+              {project.link && (
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-4 inline-block text-sm font-bold text-violet-700 hover:underline"
+                >
+                  Projekt ansehen →
+                </a>
+              )}
             </article>
           ))}
         </div>

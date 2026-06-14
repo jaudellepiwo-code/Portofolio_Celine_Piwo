@@ -26,8 +26,8 @@ export default function Hero() {
           </h2>
 
           <p className="mt-6 max-w-md text-lg leading-relaxed text-slate-700">
-            Ich studiere Informatik an der Hochschule Darmstadt und interessiere
-            mich besonders für C/C++, Rechnernetze, Systemarchitektur und
+            Ich studiere Informatik an der Hochschule Darmstadt und habe großes Interesse 
+            für Programmierung, Rechnernetze, Systemarchitektur und
             moderne Web-Technologien.
           </p>
 
