@@ -19,6 +19,7 @@ const projects = [
     description:
       "C++ Anwendung zur Verwaltung von Points of Interest mit Templates, Vererbung, Smart Pointern und Qt GUI.",
     tags: ["C++", "Qt", "JSON", "OOP"],
+    image: "/images/landkarte.svg",
   },
   {
     title: "Assembler & Hardware",
@@ -48,8 +49,12 @@ export default function Projects() {
               key={project.title}
               className="rounded-[2rem] border border-white/50 bg-white/30 p-6 shadow-xl backdrop-blur-xl transition hover:-translate-y-2"
             >
-              <div className="mb-6 flex h-40 items-center justify-center rounded-[1.5rem] bg-gradient-to-br from-pink-300/70 to-violet-500/70 text-6xl shadow-inner">
-                ✦
+              <div className="mb-6 flex h-40 items-center justify-center rounded-[1.5rem] bg-gradient-to-br from-pink-300/70 to-violet-500/70 text-6xl shadow-inner overflow-hidden">
+                {project.image ? (
+                  <img src={project.image} alt={project.title} className="w-full h-full object-cover" />
+                ) : (
+                  "✦"
+                )}
               </div>
 
               <h3 className="text-2xl font-black text-slate-900">
