@@ -26,8 +26,8 @@ export default function Hero() {
           </h2>
 
           <p className="mt-6 max-w-md text-lg leading-relaxed text-slate-700">
-            Ich studiere Informatik an der Hochschule Darmstadt und interessiere
-            mich besonders für C/C++, Rechnernetze, Systemarchitektur und
+            Ich studiere Informatik an der Hochschule Darmstadt und habe großes Interesse 
+            für Programmierung, Rechnernetze, Systemarchitektur und
             moderne Web-Technologien.
           </p>
 
@@ -51,16 +51,12 @@ export default function Hero() {
         <div className="relative flex items-center justify-center">
           <div className="absolute h-96 w-96 rounded-full bg-gradient-to-br from-pink-300 to-violet-500 opacity-70 blur-xl" />
 
-          <div className="relative flex h-80 w-80 items-center justify-center rounded-full border border-white/60 bg-white/30 p-8 shadow-2xl backdrop-blur-xl">
-            <div className="text-center">
-              <div className="text-7xl">💻</div>
-              <p className="mt-6 text-xl font-black text-violet-900">
-                Code. Network. Build.
-              </p>
-              <p className="mt-2 text-sm font-semibold text-slate-700">
-                Portfolio Website
-              </p>
-            </div>
+          <div className="relative h-80 w-80 rounded-full border border-white/60 overflow-hidden shadow-2xl">
+            <img
+              src="/images/profile.jpeg"
+              alt="Celine Jaudelle"
+              className="h-full w-full object-cover"
+            />
           </div>
         </div>
       </div>
